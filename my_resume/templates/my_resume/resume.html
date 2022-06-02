@@ -1,0 +1,22 @@
+{% extends 'my_project/index.html' %}
+{% load static %}
+{block title}
+Арсен Григорян
+{endblock}
+{% block content %}
+<br><img style="position:absolute;left:900px;right:100px" src="{% static 'my_resume/XIQV1862.JPG' %}" width="340" alt="photo">
+
+<br>
+    <center><h2>Меня зовут <span class="badge text-bg-success">Арсен Григорян!</span></h2></center>
+<p style="margin-left: 40px">Свой путь в програмирование я начал в <span class="badge text-bg-danger">2022</span> году. <br>
+    Мне понравился язык програмирования <span class="badge text-bg-warning">Python:</span><br>
+    И за все это время я преуспел в обучении.
+    <br>Более того я нашел дело, которое по-настоящему <span class="badge text-bg-success">вдохновляет</span> меня!<br>
+    На сегодняшний день мой стек состоит из:</p>
+
+<li style="margin-left: 80px"><span class="badge text-bg-primary">Python:</span> Язык програмирования</li>
+<li style="margin-left: 80px"><span class="badge text-bg-success">ООП:</span> Парадигма разработки программных систем, в которой приложения состоят из объектов</li>
+<li style="margin-left: 80px"><span class="badge text-bg-danger">Django:</span> Библиотека, которая позволит написать веб сайт</li>
+<li style="margin-left: 80px"><span class="badge text-bg-warning">Git:</span> Инструмент, который позволит объединить работу разработчиков в работе над одним проектом</li>
+
+{% endblock %}
